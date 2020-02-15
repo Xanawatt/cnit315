@@ -11,7 +11,7 @@
  * Lab time: 7:30 F
  */
 
-int main() {
+void computePool() {
 	// Initialize variables at a value that is unacceptable	
 	float wht = -1; // Width of hot tub
 	float dht = -1; // Depth of hot tub
@@ -159,5 +159,20 @@ int main() {
 	printf("\nGallons of water to fill hot tub: %.1f", hottubGallons);
 	printf("\nTotal Gallons for both: %.1f", totalPoolGallons + hottubGallons); 
 	printf("\nTotal cost for both: %.2f\n", totalCost);
+	
+}
+
+int main() {
+	int response = 0;
+	computePool();
+	while (response == 0) {
+		printf("Would you like to compute another pool? (1 for yes, 0 for no): ");
+		scanf("%d", &response);
+		if (response == 1) {
+			computePool();
+		} else {
+			return 0;
+		}
+	}
 	return 0;
 }
