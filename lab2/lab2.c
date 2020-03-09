@@ -4,10 +4,8 @@
 #define SIZE 6
 
 /*
- * Lab Title: Hot Tub/Pool
- * Lab Description: Find the size, water capacity, 
- * 	and cost required to fill a pool and hot tub 
- * 	using user specified inputs.
+ * Lab Title: Maze
+ * Lab Description: Navigate through a maze recusively to find the goal
  * Name: Mark Schneider
  * Email: schne112@purdue.edu
  * Lab time: 7:30 F
