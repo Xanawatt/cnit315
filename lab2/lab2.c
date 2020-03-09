@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 
-#define SIZE = 6
+#define SIZE 6
 
 /*
  * Lab Title: Hot Tub/Pool
@@ -28,8 +28,8 @@
  int mazeGo(int x, int y) {
 	
 	// if position is 'G'
-	if (maze[x][y] == 'G')) {
-		exit;
+	if (maze[x][y] == 'G') {
+		return 0;
 	} 
 	 
 	if (x >= 0 && y >= 0 && x < SIZE && y < SIZE && maze[x][y] != '+' && maze[x][y] != '#') {
@@ -59,6 +59,6 @@
 }
  
  int main() {
-	mazeGo(0,0);
+	printf("%d\t", mazeGo(0,0));
  }
  
